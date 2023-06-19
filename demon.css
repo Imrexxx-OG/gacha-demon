@@ -1,0 +1,168 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+body {
+  font-family: 'Creepster', cursive, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: rgba(15, 15, 15, 0.815); */
+  background: linear-gradient(to top, black, rgba(15, 15, 15, 0.815));
+  color: white;
+  animation: fade 2s ease-in-out 2;
+}
+
+/* Header Styles */
+header {
+  background-color: #1a0000;
+  padding: 20px;
+  
+}
+
+.subtopic {
+  font-size: 20px;
+}
+
+nav ul li a {
+  color: #ff4d4d;
+}
+
+#profile {
+  background-color: #1a0000;
+  border: 1px solid #ff4d4d;
+  border-radius: 10px;
+  padding: 20px;
+  height: 350px;
+
+}
+
+/* Section Styles */
+section {
+  padding: 50px;
+}
+
+#master {
+  background-image: url(artworks/gachaa.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  text-shadow: 3px 3px 2px black;
+  
+}
+
+h1,
+h2,
+h3 {
+  color: #ff4d4d;
+}
+
+p {
+  color: white;
+}
+
+/* Form Styles */
+form input,
+form textarea {
+  background-color: #1a0000;
+  color: white;
+  border: 1px solid #ff4d4d;
+  border-radius: 10px;;
+  width: 50%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+form button {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+/* Footer Styles */
+footer {
+  background-color: #1a0000;
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* Artwork Styles */
+/* .artwork {
+  background-color: #1a0000;
+  border: 1px solid #ff4d4d;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.artwork h3 {
+  color: #ff4d4d;
+} */
+
+.artwork-image {
+  width: 25%; /* Adjust the desired width */
+  height: 600px; /* Maintain aspect ratio */
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.artwork {
+  width: 22%;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #1a0000;
+  border: 1px solid #ff4d4d;
+}
+
+.artwork-image {
+  width: 100%;
+  height: auto;
+}
+
+
+a {
+  color: #FF0000; /* Set your desired link color */
+  text-decoration: none; /* Remove underline if desired */
+}
+
+a:hover {
+  color: #FF00FF; /* Set the color for link hover state */
+}
+
+.video-wrapper {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  background-color: #1a0000;
+  border: 1px solid #ff4d4d;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

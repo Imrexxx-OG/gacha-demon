@@ -1,0 +1,77 @@
+window.addEventListener('DOMContentLoaded', () => {
+  // Sample artwork data
+  const artworkData = [
+    {
+      title: 'Final Form',
+      image: 'artworks/9-d3VTCF.jpg',
+      description: 'Description of Artwork 1',
+    },
+    {
+      title: 'Final Form',
+      image: 'artworks/K6JIfAJ3.jpg',
+      description: 'Description of Artwork 2',
+    },{
+      title: 'Final Form',
+      image: 'artworks/uM5lbjd1.jpg',
+      description: 'Description of Artwork',
+    },
+    {
+      title: 'Final Form',
+      image: 'artworks/1tAA-YbY.jpg',
+      description: 'Description of Artwork 2',
+    },{
+      title: 'Final Form',
+      image: 'artworks/WVCs4ZDl.jpg',
+      description: 'Description of Artwork',
+    },
+    {
+      title: 'Final Form',
+      image: 'artworks/XLSxShOK.jpg',
+      description: 'Description of Artwork',
+    },{
+      title: 'Final Form',
+      image: 'artworks/Z_Hue3rK.jpg',
+      description: 'Description of Artwork 1',
+    }, {
+      title: 'Final Form',
+      image: 'artworks/DeVx4XkV.jpg',
+      description: 'Description of Artwork',
+    },
+    {
+      title: 'Final Form',
+      image: 'artworks/Ggn99Nfj.jpg',
+      description: 'Description of Artwork',
+    }
+    // Add more artwork objects as needed
+  ];
+
+  // Display artwork on the webpage
+  artworkData.forEach((artwork) => {
+    displayArtwork(artwork);
+  });
+});
+
+// Function to display artwork on the webpage
+function displayArtwork(artwork) {
+  const artworkContainer = document.getElementById('artwork');
+  const artworkElement = document.createElement('div');
+  artworkElement.classList.add('artwork');
+
+  // Display artwork title
+  const titleElement = document.createElement('h3');
+  titleElement.textContent = artwork.title;
+  artworkElement.appendChild(titleElement);
+
+  // Display artwork image
+  const imageElement = document.createElement('img');
+  imageElement.src = artwork.image;
+  imageElement.classList.add('artwork-image'); // Add CSS class for resizing
+  artworkElement.appendChild(imageElement);
+
+  // Display artwork description
+  const descriptionElement = document.createElement('p');
+  descriptionElement.textContent = artwork.description;
+  artworkElement.appendChild(descriptionElement);
+
+  artworkContainer.appendChild(artworkElement);
+}
