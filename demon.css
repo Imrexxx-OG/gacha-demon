@@ -41,11 +41,11 @@ section {
 }
 
 #master {
-  background-image: url(artworks/gachaa.jpg);
+  background-image: url(artworks/ghost.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center center;
-  text-shadow: 3px 3px 2px black;
+  text-shadow: 6px 6px 4px black;
   
 }
 
