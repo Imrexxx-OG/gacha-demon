@@ -4,12 +4,12 @@ window.addEventListener('DOMContentLoaded', () => {
     {
       title: 'Final Form',
       image: 'artworks/9-d3VTCF.jpg',
-      description: 'Description of Artwork 1',
+      description: 'Description of Artwork',
     },
     {
       title: 'Final Form',
       image: 'artworks/K6JIfAJ3.jpg',
-      description: 'Description of Artwork 2',
+      description: 'Description of Artwork',
     },{
       title: 'Final Form',
       image: 'artworks/uM5lbjd1.jpg',
@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
     {
       title: 'Final Form',
       image: 'artworks/1tAA-YbY.jpg',
-      description: 'Description of Artwork 2',
+      description: 'Description of Artwork',
     },{
       title: 'Final Form',
       image: 'artworks/WVCs4ZDl.jpg',
@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     },{
       title: 'Final Form',
       image: 'artworks/Z_Hue3rK.jpg',
-      description: 'Description of Artwork 1',
+      description: 'Description of Artwork',
     }, {
       title: 'Final Form',
       image: 'artworks/DeVx4XkV.jpg',

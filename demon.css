@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
 body {
-  font-family: 'Creepster', cursive, Arial, sans-serif;
+  font-family: sans-serif, 'Creepster';
   margin: 0;
   padding: 0;
   /* background-color: rgba(15, 15, 15, 0.815); */
@@ -11,34 +11,79 @@ body {
   animation: fade 2s ease-in-out 2;
 }
 
+h1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+h2 {
+  font-size: 31px; /* Adjust the font size as desired */
+}
+
 /* Header Styles */
 header {
-  background-color: #1a0000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
   
 }
 
-.subtopic {
+#subtopic {
+  flex: 1;
   font-size: 20px;
+  color: white;
 }
 
 nav ul li a {
-  color: #ff4d4d;
+  color: white;
+  text-shadow: 6px 6px 4px black;
 }
 
 #profile {
+  flex: 1;
   background-color: #1a0000;
-  border: 1px solid #ff4d4d;
+  border: 1px solid #fff; /* Change the border color to white */
   border-radius: 10px;
   padding: 20px;
-  height: 350px;
+  max-width: 25%;
+  height: auto;
 
 }
 
 /* Section Styles */
+
 section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 50px;
 }
+
+section h2 {
+  flex-basis: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+section#contact,
+section#animation {
+  display: block;
+}
+
+section#contact h2,
+section#animation h2 {
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+section#animation h2,
+section#contact h2 {
+  text-align: left;
+}
+
 
 #master {
   background-image: url(artworks/ghost.jpg);
@@ -46,6 +91,8 @@ section {
   background-size: 100% 100%;
   background-position: center center;
   text-shadow: 6px 6px 4px black;
+  max-width: 100%;
+  height: auto;
   
 }
 
@@ -62,12 +109,13 @@ p {
 /* Form Styles */
 form input,
 form textarea {
+  display: block;
+  margin-bottom: 10px;
   background-color: #1a0000;
   color: white;
   border: 1px solid #ff4d4d;
   border-radius: 10px;;
   width: 50%;
-  margin-bottom: 10px;
   padding: 10px;
 }
 
@@ -75,6 +123,8 @@ form button {
   background-color: #ff4d4d;
   color: white;
   padding: 10px 20px;
+  display: block;
+  margin-top: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -91,20 +141,12 @@ footer {
 
 
 /* Artwork Styles */
-/* .artwork {
-  background-color: #1a0000;
-  border: 1px solid #ff4d4d;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.artwork h3 {
-  color: #ff4d4d;
-} */
 
 .artwork-image {
-  width: 25%; /* Adjust the desired width */
-  height: 600px; /* Maintain aspect ratio */
+  /* width: 25%; /* Adjust the desired width */
+  /* height: 600px; Maintain aspect ratio */ 
+  max-width: 100%;
+  height: auto;
 }
 
 .gallery-container {
@@ -118,7 +160,7 @@ footer {
   margin-bottom: 20px;
   padding: 20px;
   background-color: #1a0000;
-  border: 1px solid #ff4d4d;
+  border: 1px solid #fff; 
 }
 
 .artwork-image {
@@ -138,11 +180,11 @@ a:hover {
 
 .video-wrapper {
   position: relative;
-  width: 400px;
-  height: 300px;
+  width: 25%;
+  height: 25%;
   overflow: hidden;
   background-color: #1a0000;
-  border: 1px solid #ff4d4d;
+  border: 1px solid #fff;
   border-radius: 10px;
   padding: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
