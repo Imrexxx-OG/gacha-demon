@@ -8,7 +8,17 @@ body {
   /* background-color: rgba(15, 15, 15, 0.815); */
   background: linear-gradient(to top, black, rgba(15, 15, 15, 0.815));
   color: white;
-  animation: fade 2s ease-in-out 2;
+  animation: fade 2s ease-in-out 1;
+}
+
+p {
+  font-size: 16px;
+}
+
+@media(max-width: 480px){
+  p {
+    font-size: 14px;
+  }
 }
 
 h1 {
